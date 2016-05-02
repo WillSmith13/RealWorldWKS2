@@ -5,12 +5,13 @@ public class Student {
 	private String gender;
 	private int classYr;
 	private int age;
+	private String time;
 	
 	
 	/* Data members above, methods below */
 	
 	// Right now a "full data" constructor only
-	public Student(String newName, String newGender, int newClassYr, int newAge) {
+	public Student(String newName, String newGender, int newClassYr, int newAge, String newTime) {
 		name = newName;
 		gender = newGender;
 		classYr = newClassYr;
@@ -46,9 +47,15 @@ public class Student {
 	public int getClassYr() {
 		return classYr;
 	}
+	public void setTime (String newTime) {
+		time = newTime;
+	}
+	public String getTime() { 
+		return time;
+	}
 	
 	public String toString() {
-		return ("Student: " + name + " Gender: " + gender + " Class Year: " + classYr + " Age: " + age);
+		return ("Student: " + name + " Gender: " + gender + " Class Year: " + classYr + " Age: " + age + "Time: " + time);
 	}
 	
 	
